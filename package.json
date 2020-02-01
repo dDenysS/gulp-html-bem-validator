@@ -1,6 +1,6 @@
 {
   "name": "gulp-html-bem-validator",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Gulp plugin for validation a bem html",
   "main": "index.js",
   "scripts": {
