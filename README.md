@@ -1,4 +1,5 @@
 # gulp-html-bem-validator  
+[![NPM version][npm-image]][npm-url] [![Build status][travis-image]][travis-url]
 > Gulp plugin for validation a bem html
 
 ## Usage
@@ -30,3 +31,8 @@ gulp.task('html-bem-validator', () => {
 
 # Error
 ![error-result-example](https://lh3.googleusercontent.com/aw2V-r8uRt25GeR3NqefAVqhomPef7z-j7zv5-vTeUphd4Rhfwo60J05qvMRMO5faHGVJOeGuWRFLOim0krO-dx2amtn7kHSXUMrdsxBIdyh9QZ0UPJ75XbKsxrz5ROckhl2dh3oAw=w1227-h375-no)
+
+[travis-url]: https://travis-ci.com/dDenysS/gulp-html-bem-validator
+[travis-image]: https://travis-ci.com/dDenysS/gulp-html-bem-validator.svg?branch=master
+[npm-url]: https://npmjs.org/package/gulp-html-bem-validator
+[npm-image]: https://badge.fury.io/js/gulp-html-bem-validator.svg
