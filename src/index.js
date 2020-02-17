@@ -190,7 +190,7 @@ function htmlBemValidatorResult({name, content}) {
         console.log(CAT(treeAst))
         console.log(chalk.black.bgRed.bold(`❌ ${countBemWarning} - count bem warning. Filename:${name}`))
     } else {
-        console.log(chalk.bgRgb(168, 204, 140).rgb(0, 0, 0)(`✔ Gulp-html-bem-validator: Success. Filename:${name}`))
+        console.log(chalk.bgBlack.green(`✔ Gulp-html-bem-validator: Success. Filename:${name}`))
     }
 }
 
