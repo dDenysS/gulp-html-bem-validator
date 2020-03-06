@@ -19,6 +19,13 @@ describe('gulp-html-bem-validator', () => {
             assert.strictEqual(countBemWarning, 1)
         })
 
+        it('should be one error bem(prefix)', () => {
+            const html = fs.readFileSync(path.join(__dirname, '/fixtures/prefix-error.html'))
+            const {countBemWarning} = htmlBemValidator1.htmlBemValidator({content: html.toString()})
+
+            assert.strictEqual(countBemWarning, 1)
+        })
+
         it('output the success result to the console', () => {
             const html = fs.readFileSync(path.join(__dirname, '/fixtures/valid.html'))
 

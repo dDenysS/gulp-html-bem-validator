@@ -159,7 +159,7 @@ function checkBemElement(element) {
             let modifierPrefixCorrect = false
             const modifierPrefix = classItem.split('--')[0]
 
-            if (element.classList.contains(modifierPrefix)) modifierPrefixCorrect = true
+            if (~element.classNames.indexOf(modifierPrefix)) modifierPrefixCorrect = true
 
             if (!modifierPrefixCorrect) {
                 countBemWarning++
