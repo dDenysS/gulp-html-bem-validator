@@ -139,18 +139,23 @@ function checkBemElement(element) {
     }
 
     element.classNames.forEach(classItem => {
-        if (classItem.split('__').length > 1) {
-            let prefixCorrect = false
-            const prefix = classItem.split('__')[0]
+        let prefixCorrect = false
+        if (classItem.split('__').length > 2) {
+            countBemWarning++
+            element.customDataSet.hasError = true
+        } else {
+            if (classItem.split('__').length > 1) {
+                const prefix = classItem.split('__')[0]
 
-            if (element.customDataSet.prefixes[prefix]) {
-                prefixCorrect = true
-            }
+                if (element.customDataSet.prefixes[prefix]) {
+                    prefixCorrect = true
+                }
 
-            if (!prefixCorrect) {
-                countBemWarning++
+                if (!prefixCorrect) {
+                    countBemWarning++
 
-                element.customDataSet.hasError = true
+                    element.customDataSet.hasError = true
+                }
             }
         }
 
